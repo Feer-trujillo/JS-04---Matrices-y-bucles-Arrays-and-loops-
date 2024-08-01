@@ -41,12 +41,16 @@ if (numUsers ===1){
 if (numUsers === 2) {
     return `${users[0]} y ${users[1]} en línea`;
 }
-const firsUser = user[0];
-const secondUser = user[1];
+const firstUser = users[0];
+const secondUser = users[1];
 const othersCount = numUsers -2;
 
 return `${firstUser}, ${secondUser} y ${othersCount} más en línea`;
 }
-
+console.log(onlineStatus(['mockIng99', 'J0eyPunch', 'glassedFer']));
+console.log(onlineStatus (['Alice']));
+console.log(onlineStatus(['Bob', 'Charlie']));
+console.log(onlineStatus(['David', 'Eva', 'Frank', 'Grace']));
+console.log(onlineStatus([]));
 
 
